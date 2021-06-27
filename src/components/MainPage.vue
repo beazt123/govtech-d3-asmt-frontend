@@ -10,7 +10,8 @@
       <el-button size="small" type="primary" round @click="submitLink">Shorten!</el-button>
     </div>
     <el-divider class="divider">Result below</el-divider>
-    <span>{{text}}</span>
+    <!-- <span>{{text}}</span> -->
+    <el-link v-bind:href="text" target="_blank">{{text}}</el-link>
 
 
     <!-- <div class="button-holder">
