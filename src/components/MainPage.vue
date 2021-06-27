@@ -46,9 +46,9 @@ export default {
               url: this.input
           },
           headers: { 
-            "Content-Type": "application/json", 
-          },//"Access-Control-Allow-Origin": "*" 
-        }).then(function (response) {
+            "Content-Type": "application/json" 
+          }//"Access-Control-Allow-Origin": "*" 
+        }).then( (response) => {
           //handle success
           console.log(response.data);
           var resData = response.data.data;
@@ -58,8 +58,8 @@ export default {
           
         }).catch( (error) => {
           //handle error
-          console.log(error.response);
-          this.$message.error(error.response.data.description);
+          console.log(error);
+        //   this.$message.error(error.response.data.description);
         });
       }
       else {
